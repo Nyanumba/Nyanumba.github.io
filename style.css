@@ -22,6 +22,44 @@ p {
     margin: 0 auto 20px;
     font-size: 1.1em;
 }
+/* Add to style.css */
+
+/* Container for image and description */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Style the profile image */
+.profile-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes it circular; remove for square */
+    object-fit: cover; /* Ensures image fits nicely */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the description text */
+.profile-description {
+    flex: 1; /* Takes remaining space */
+    text-align: left; /* Aligns text to the left */
+    margin: 0;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack image and text on small screens */
+        text-align: center;
+    }
+    .profile-description {
+        text-align: center; /* Center text on small screens */
+    }
+}
 
 /* Projects Section */
 .projects-container {
