@@ -3,113 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Nyanumba - Software and Web Developer</title>
+    <title>Anthony Nyanumba | Software Systems and Web Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Hero Section -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Anthony Nyanumba</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
     <section id="home" class="hero">
-        <h1>Anthony Nyanumba Nyasente</h1>
-        <h2>Software and Backend Web Developer</h2>
-        <div class="profile-container">
-            <img src="profile.jpg" alt="Anthony Nyanumba Profile Picture" class="profile-image">
-            <p class="profile-description">I am Anthony Nyanumba, a software and backend web developer.<br> I build reliable systems with Django, Flask, and RESTful APIs, paired with database expertise in MySQL, SQLite, and MongoDB.<br> I also enjoy creating slick frontends using React, Angular, HTML, CSS, and JavaScript.<br> I love turning ideas into functional, user-friendly solutions!</p>
+        <div class="hero-content">
+            <h1>Anthony Nyanumba Nyasente</h1>
+            <h2>Software & Web Developer</h2>
+            <p>Building reliable, scalable systems with modern backend frameworks, RESTful APIs, databases and clean user interfaces.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+        <img src="profile.jpg" alt="Anthony Nyanumba" class="hero-profile">
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p class="about-text">
+                I am Anthony Nyanumba, a passionate and skilled software and web developer.<br><br>
+                I have over 2 years experience in building reliable server-side systems using Django, Flask, Fastapi, Node, and Express frameworksI and RESTful APIs, with strong database experience in MySQL, PostgreSQL, SQLite and MongoDB.<br><br>
+                I also have over 2 years ecperience in building client-side systems using frontend frameworks such as React, AngularJS, with modern JavaScript, HTML and CSS.<br><br>
+                I love turning ideas into clean, functional and user-friendly solutions.
+            </p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1>My Key Projects</h1>
-        <div class="projects-container">
-            <div class="project" data-category="backend">
-                <h2>Ecommerce Website</h2>
-                <p>A dynamic ecommerce platform created using Django Framework.</p>
-                <a href="https://github.com/Nyanumba/smart-computers">View on GitHub</a>
-            </div>
-            <div class="project" data-category="backend">
-                <h2>ETL Pipeline</h2>
-                <p>A Python ETL pipeline that fetches data from an API to a SQLite database.</p>
-                <a href="https://github.com/Nyanumba/ETL-pipeline">View on GitHub</a>
-            </div>
-            <div class="project" data-category="backend">
-                <h2>Mpesa STK-Push</h2>
-                <p>A Django STK-Push project that integrates Mpesa payments with Django.</p>
-                <a href="https://github.com/Nyanumba/Mpesa-STK-Push-">View on GitHub</a>
-            </div>
-            <div class="project" data-category="frontend">
-                <h2>Currency Converter</h2>
-                <p>A real-time currency converter built with HTML, CSS, JavaScript, and REST API.</p>
-                <a href="https://github.com/Nyanumba/Currency-Converter">View on GitHub</a>
-            </div>
-            <div class="project" data-category="backend">
-                <h2>Hospital Management System</h2>
-                <p>A system for appointment scheduling and managing doctors and patients.</p>
-                <a href="https://github.com/Nyanumba/Hospital-management-System">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+    <!-- Work Experience -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h1>Work Experience</h1>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="exp-date">August 2025 – December 2025</div>
+                    <h3>Backend Developer (FastAPI)</h3>
+                    <h4>Isentry Technologies</h4>
+                    <ul>
+                        <li>Developed robust and scalable backend services using FastAPI framework</li>
+                        <li>Designed and implemented high-performance RESTful APIs</li>
+                        <li>Collaborated with frontend teams to integrate APIs and ensure smooth data flow</li>
+                        <li>Worked on database modeling, query optimization, and secure authentication flows</li>
+                    </ul>
+                </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h1>My Skills</h1>
-        <div class="skills">
-            <div class="code">
-                <i class="fab fa-html5" style="color: #e34c26;"></i>
-                <p class="naming">HTML</p>
-            </div>
-            <div class="code">
-                <i class="fab fa-css3-alt" style="color: #264de4;"></i>
-                <p class="naming">CSS</p>
-            </div>
-            <div class="code">
-                <i class="fab fa-js" style="color: #f0db4f;"></i>
-                <p class="naming">JavaScript</p>
-            </div>
-            <div class="code">
-                <i class="fas fa-database" style="color: #00758f;"></i>
-                <p class="naming">MySQL</p>
-            </div>
-            <div class="code">
-                <i class="fab fa-python" style="color: #306998;"></i>
-                <p class="naming">Python</p>
-            </div>
-            <div class="code">
-                <i class="fab fa-git-alt" style="color: #f05033;"></i>
-                <p class="naming">Git</p>
-            </div>
-            <div class="code">
-                <i class="fas fa-server" style="color: #00a86b;"></i>
-                <p class="naming">Django</p>
-            </div>
-            <div class="code">
-                <i class="fab fa-github" style="color: #333;"></i>
-                <p class="naming">GitHub</p>
+                <div class="experience-card">
+                    <div class="exp-date">April 2025 – July 2025</div>
+                    <h3>System and Database Administrator Intern</h3>
+                    <h4>NG-CDF Kenya</h4>
+                    <ul>
+                        <li>Managed and maintained organizational databases (primarily MySQL and SQLite)</li>
+                        <li>Performed system administration tasks: server monitoring, backups, user access control</li>
+                        <li>Troubleshot and resolved database performance and connectivity issues</li>
+                        <li>Assisted in data migration and reporting for constituency development projects</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="exp-date">May 2024 – September 2024</div>
+                    <h3>IT Support Intern</h3>
+                    <h4>NG-CDF Kenya</h4>
+                    <ul>
+                        <li>Provided first-line technical support for hardware, software, and network issues</li>
+                        <li>Assisted users with Windows/Linux systems, email configuration, and office productivity tools</li>
+                        <li>Supported maintenance and troubleshooting of printers, scanners, and peripherals</li>
+                        <li>Documented support tickets and followed up to ensure resolution</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="call">Get In Touch...</h2>
-        <div class="contact">
-            <div class="contacts">
-                <p class="heading"><i class="fas fa-phone"></i><br><br><a href="tel:+254797469560">Phone</a></p>
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h1>My Key Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Ecommerce Website</h3>
+                    <p>Dynamic ecommerce platform created using Django Framework.</p>
+                    <a href="https://github.com/Nyanumba/smart-computers" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>ETL Pipeline</h3>
+                    <p>Python ETL pipeline fetching data from API to SQLite database.</p>
+                    <a href="https://github.com/Nyanumba/ETL-pipeline" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Mpesa STK-Push</h3>
+                    <p>Django integration with M-Pesa STK Push payments.</p>
+                    <a href="https://github.com/Nyanumba/Mpesa-STK-Push-" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Currency Converter</h3>
+                    <p>Real-time currency converter using HTML, CSS, JS & REST API.</p>
+                    <a href="https://github.com/Nyanumba/Currency-Converter" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Hospital Management System</h3>
+                    <p>Appointment scheduling and doctor/patient management system.</p>
+                    <a href="https://github.com/Nyanumba/Hospital-management-System" target="_blank">View on GitHub</a>
+                </div>
             </div>
-            <div class="contacts">
-                <p class="heading"><i class="bi bi-github"></i><br><br><a href="https://github.com/Nyanumba" target="_blank">GitHub</a></p>
-            </div>
-            <div class="contacts">
-                <p class="heading"><i class="bi bi-linkedin"></i><br><br><a href="https://www.linkedin.com/in/anthony-nyasente-b89a92262/" target="_blank">LinkedIn</a></p>
-            </div>
-            <div class="contacts">
-                <p class="heading"><i class="fas fa-envelope"></i><br><br><a href="mailto:anthonynyasente@gmail.com">Email</a></p>
-            </div>
-            
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="container">
+            <h1>Education</h1>
+            <div class="card">
+                <h3>Bachelor of Science in Applied Computing</h3>
+                <h4>KCA University</h4>
+                <p class="period">September 2021 – November 2025</p>
+                <ul>
+                    <li>Comprehensive training in software engineering, algorithms, data structures & system design</li>
+                    <li>Focused coursework on web technologies, databases and applied computing solutions</li>
+                    <li>Developed multiple full-stack applications throughout the program</li>
+                    <li>Completed a significant capstone project involving real-world system development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h1>My Skills</h1>
+
+            <div class="skills-category">
+                <h2>Frontend</h2>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fab fa-html5"></i><span>HTML</span></div>
+                    <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                    <div class="skill"><i class="fab fa-react"></i><span>ReactJS</span></div>
+                    <div class="skill"><i class="fab fa-angular"></i><span>AngularJS</span></div>
+                    <div class="skill"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h2>Backend</h2>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="skill"><i class="fas fa-server"></i><span>Django</span></div>
+                    <div class="skill"><i class="fas fa-flask"></i><span>Flask</span></div>
+                    <div class="skill"><i class="fas fa-code"></i><span>FastAPI</span></div>
+                    <div class="skill"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="skill"><i class="fab fa-node-js"></i><span>NodeJS</span></div>
+                    <div class="skill"><i class="fas fa-globe"></i><span>ExpressJS</span></div>
+                    <div class="skill"><i class="fas fa-link"></i><span>API Development</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h2>Databases</h2>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fas fa-database"></i><span>MySQL</span></div>
+                    <div class="skill"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                    <div class="skill"><i class="fas fa-database"></i><span>SQLite</span></div>
+                    <div class="skill"><i class="fas fa-database"></i><span>MongoDB</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h2>Tools & Version Control</h2>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                    <div class="skill"><i class="fab fa-github"></i><span>GitHub</span></div>
+                    <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="skill"><i class="fas fa-code-branch"></i><span>Render</span></div>
+                    <div class="skill"><i class="fas fa-cloud-upload-alt"></i><span>Netlify</span></div>
+                    <div class="skill"><i class="fas fa-laptop-code"></i><span>VS Code</span></div>
+                    <div class="skill"><i class="fas fa-server"></i><span>Windows Server</span></div>
+                    <div class="skill"><i class="fab fa-windows"></i><span>Windows OS</span></div>
+                    <div class="skill"><i class="fab fa-linux"></i><span>Linux OS</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h2>Professional Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fas fa-clock"></i><span>Time Management</span></div>
+                    <div class="skill"><i class="fas fa-chart-line"></i><span>Analytical Skills</span></div>
+                    <div class="skill"><i class="fas fa-comments"></i><span>Communication</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+<section id="certificates" class="section">
+    <div class="container">
+        <h1>Certificates & Professional Development</h1>
+        <div class="certificates-horizontal">
+            <div class="certificate-card">
+                <h3>Backend Web Development</h3>
+                <h4>ALX Africa Academy</h4>
+                <p class="period">5-month intensive program • Issued: November 7, 2025</p>
+                <ul>
+                    <li>Built scalable backends using Python, Django, Flask and FastAPI</li>
+                    <li>Mastered RESTful API design, authentication, testing & deployment</li>
+                    <li>Completed hands-on projects simulating real industry backend challenges</li>
+                </ul>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Data Analytics</h3>
+                <h4>ALX Africa Academy</h4>
+                <p class="period">6-month program • Issued: September 26, 2025</p>
+                <ul>
+                    <li>Proficient in data cleaning, transformation & analysis (pandas, numpy)</li>
+                    <li>Created visualizations and reports using matplotlib & seaborn</li>
+                    <li>Performed exploratory data analysis and derived business insights</li>
+                </ul>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Data Protection Law</h3>
+                <h4>Strathmore University</h4>
+                <p class="period">1-month course • Issued: October 7, 2025</p>
+                <ul>
+                    <li>Studied Kenyan Data Protection Act 2019 and GDPR alignment</li>
+                    <li>Covered consent, DPIAs, breach notification & compliance</li>
+                    <li>Applied legal concepts to technology and organizational contexts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <div class="contact-grid">
+                <a href="tel:+254797469560" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone</span>
+                </a>
+                <a href="https://github.com/Nyanumba" target="_blank" class="contact-item">
+                    <i class="bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/anthony-nyasente-b89a92262/" target="_blank" class="contact-item">
+                    <i class="bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:anthonynyasente@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>

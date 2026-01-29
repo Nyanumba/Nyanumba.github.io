@@ -1,22 +1,20 @@
-// script.js
-
-// Theme Toggle (Dark/Light Mode)
-const toggleButton = document.createElement('button');
-toggleButton.textContent = 'Toggle Dark Mode';
-toggleButton.style.position = 'fixed';
-toggleButton.style.top = '10px';
-toggleButton.style.right = '10px';
-toggleButton.style.padding = '8px 16px';
-toggleButton.style.backgroundColor = '#2980b9';
-toggleButton.style.color = '#fff';
-toggleButton.style.border = 'none';
-toggleButton.style.borderRadius = '5px';
-toggleButton.style.cursor = 'pointer';
-document.body.appendChild(toggleButton);
-
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-// Console Greeting
-console.log("Welcome to Anthony Nyanumba's Portfolio!");
+// Optional dark mode toggle (you can keep or remove)
+const toggle = document.createElement('button');
+toggle.textContent = 'Dark Mode';
+toggle.className = 'dark-toggle';
+document.body.appendChild(toggle);
+
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    toggle.textContent = document.body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+});
