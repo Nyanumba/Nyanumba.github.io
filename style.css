@@ -1,19 +1,21 @@
 /* ====================================================================
-   TOKENS
+   TOKENS — permanent dark palette
    ==================================================================== */
 :root {
+    color-scheme: dark;
+
     /* color */
-    --paper: #f4f5f1;
-    --surface: #ffffff;
-    --ink: #12161b;
-    --slate: #5c6670;
-    --line: #dcdfd8;
-    --signal: #1e7a56;       /* primary accent — deep emerald */
-    --signal-ink: #ffffff;
-    --signal-soft: #e7f1ea;  /* tint used for badges / hovers */
-    --key: #2e4f9e;          /* secondary accent — used sparingly for "type" tags */
-    --key-soft: #eaeefb;
-    --shadow: rgba(18, 22, 27, 0.08);
+    --paper: #10141a;
+    --surface: #171c23;
+    --ink: #eceeea;
+    --slate: #98a1aa;
+    --line: #2a313a;
+    --signal: #38b483;       /* primary accent — emerald */
+    --signal-ink: #0b1410;
+    --signal-soft: #16261f;  /* tint used for badges / hovers */
+    --key: #7c97e0;          /* secondary accent — used sparingly for "type" tags */
+    --key-soft: #1c2436;
+    --shadow: rgba(0, 0, 0, 0.45);
 
     /* type */
     --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
@@ -23,20 +25,6 @@
     --max-w: 1140px;
     --radius: 10px;
     --nav-h: 72px;
-}
-
-[data-theme="dark"] {
-    --paper: #10141a;
-    --surface: #171c23;
-    --ink: #eceeea;
-    --slate: #98a1aa;
-    --line: #2a313a;
-    --signal: #38b483;
-    --signal-ink: #0b1410;
-    --signal-soft: #16261f;
-    --key: #7c97e0;
-    --key-soft: #1c2436;
-    --shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* ====================================================================
