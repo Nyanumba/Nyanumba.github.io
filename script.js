@@ -25,30 +25,6 @@ navToggle.addEventListener('click', () => {
 });
 
 // ============================================================
-// Theme toggle (light / dark) — session only, no storage
-// ============================================================
-const themeToggle = document.getElementById('themeToggle');
-const root = document.documentElement;
-
-function applyTheme(theme) {
-    if (theme === 'dark') {
-        root.setAttribute('data-theme', 'dark');
-        themeToggle.querySelector('i').className = 'fas fa-sun';
-    } else {
-        root.removeAttribute('data-theme');
-        themeToggle.querySelector('i').className = 'fas fa-moon';
-    }
-}
-
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-applyTheme(prefersDark ? 'dark' : 'light');
-
-themeToggle.addEventListener('click', () => {
-    const isDark = root.getAttribute('data-theme') === 'dark';
-    applyTheme(isDark ? 'light' : 'dark');
-});
-
-// ============================================================
 // Scroll-spy: highlight active nav link
 // ============================================================
 const sections = document.querySelectorAll('section[id]');
